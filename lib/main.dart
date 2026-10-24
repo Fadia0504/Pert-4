@@ -12,15 +12,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aplikasi Kampus',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Aplikasi Kampus'),
-        ),
-        body: const Center(
-          child: Text('Selamat Datang di Aplikasi Kampus!'),
-        ),
-      )
+      home: const MyHome(),
     );
   }
 }
 
+class MyHome extends StatelessWidget {
+  const MyHome({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Aplikasi Kampus'),
+      ),
+      body: Center(
+        child: Text('Fadia Nurcholifah'),
+      ),
+    );
+  }
+}

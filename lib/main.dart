@@ -30,7 +30,7 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Aplikasi Kampus'),
+        title: const Text('Dashboard Mahasiswa'),
       ),
       body: Center(
         child: Text('Fadia Nurcholifah'),

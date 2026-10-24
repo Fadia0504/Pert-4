@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
       title: 'Aplikasi Kampus',
       debugShowCheckedModeBanner: false,
       home: const MyHome(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.indigo,
+        ),
+        useMaterial3: true,
+      ),
     );
   }
 }

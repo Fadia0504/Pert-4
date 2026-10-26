@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       title: 'Aplikasi Kampus',
       debugShowCheckedModeBanner: false,
       home: const ProfilPage(),
-      theme: ThemeData.dark(useMaterial3: true),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+      ),
+      darkTheme: ThemeData.dark(useMaterial3: true),
     );
   }
 }
